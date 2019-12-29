@@ -1,0 +1,22 @@
+.vdz-list > li{
+    line-height: 200%;
+    font-size: 130%;
+}
+
+section.slide {
+    padding-top: 2em!important;
+}
+
+.text-apple-vdz {
+    font-size: 2.5rem;
+}
+
+.code-compressed {
+    font-size: 0.8em;
+    line-height: 12px;
+}
+
+pre {
+    padding-left: 1.2rem!important;
+    padding-right: 1.2rem!important;
+}

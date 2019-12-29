@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en" prefix="og: http://ogp.me/ns#">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- SEO -->
+    <title>Java 14</title>
+    <meta name="description" content="WebSlides is the easiest way to make HTML presentations. Just essential features, clean code, and lovely CSS.">
+
+    <!-- URL CANONICAL -->
+    <!-- <link rel="canonical" href="http://your-url.com/permalink"> -->
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,700,700i%7CMaitree:200,300,400,600,700&amp;subset=latin-ext" rel="stylesheet">
+
+    <!-- CSS Base -->
+    <link rel="stylesheet" type='text/css' media='all' href="../static/css/webslides.css">
+    <link rel="stylesheet" type='text/css' media='all' href="../static/css/Chart.min.css">
+    <link rel="stylesheet" type='text/css' media='all' href="../static/css/voxxed.css">
+    <link rel="stylesheet" type='text/css' media='all' href="../static/css/almanac.css">
+    <link rel="stylesheet" type='text/css' media='all' href="../static/css/highlighter/androidstudio.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+
+
+    <!-- Optional - CSS SVG Icons (Font Awesome) -->
+    <link rel="stylesheet" type="text/css" media="all" href="../static/css/svg-icons.css">
+
+    <!-- SOCIAL CARDS (ADD YOUR INFO) -->
+
+    <!-- FACEBOOK -->
+    <meta property="og:url" content="http://your-url.com/permalink"> <!-- EDIT -->
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Make a Keynote presentation using HTML"> <!-- EDIT -->
+    <meta property="og:description" content="WebSlides is the easiest way to make HTML presentations. 120+ free slides ready to use."> <!-- EDIT -->
+    <meta property="og:updated_time" content="2017-01-04T17:32:14"> <!-- EDIT -->
+    <meta property="og:image" content="../static/images/share-webslides.jpg" > <!-- EDIT -->
+
+    <!-- TWITTER -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@webslides"> <!-- EDIT -->
+    <meta name="twitter:creator" content="@jlantunez"> <!-- EDIT -->
+    <meta name="twitter:title" content="Make a Keynote presentation using HTML"> <!-- EDIT -->
+    <meta name="twitter:description" content="WebSlides is the easiest way to make HTML presentations. 120+ free slides ready to use."> <!-- EDIT -->
+    <meta name="twitter:image" content="../static/images/share-webslides.jpg"> <!-- EDIT -->
+
+    <!-- FAVICONS -->
+    <link rel="shortcut icon" sizes="16x16" href="../static/images/favicons/favicon.png">
+    <link rel="shortcut icon" sizes="32x32" href="../static/images/favicons/favicon-32.png">
+    <link rel="apple-touch-icon icon" sizes="76x76" href="../static/images/favicons/favicon-76.png">
+    <link rel="apple-touch-icon icon" sizes="120x120" href="../static/images/favicons/favicon-120.png">
+    <link rel="apple-touch-icon icon" sizes="152x152" href="../static/images/favicons/favicon-152.png">
+    <link rel="apple-touch-icon icon" sizes="180x180" href="../static/images/favicons/favicon-180.png">
+    <link rel="apple-touch-icon icon" sizes="192x192" href="../static/images/favicons/favicon-192.png">
+
+    <!-- Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="theme-color" content="#333333">
+
+    
+  </head>
+  <body>
+    <main role="main">
+      <article id="webslides">
+
+        <!-- Quick Guide
+          - Each parent <section> in the <article id="webslides"> element is an individual slide.
+          - Vertical sliding = <article id="webslides" class="vertical">
+          - <div class="wrap"> = container 90% / <div class="wrap size-50"> = 45%;
+        -->
+
+        <section class="bg-apple aligncenter" name="main-slide"></section>
+        <section class="bg-apple aligncenter" name ="jep-chart"></section>
+
+        <!-- slide presentation -->
+        <section class="bg-apple" name="jk">
+
+          <!-- .end .wrap -->
+        </section>
+
+        <section class="bg-apple" name="marco"></section> >
+        
+        <section class="bg-apple" name ="dev-features"></section>
+        <section class="bg-apple" name ="gc-features"></section>
+        <section class="bg-apple" name ="other-features"></section>
+        <section class="bg-apple" name ="records"></section>
+        <section class="bg-apple" name ="hidden-changes"></section>
+
+       
+
+        <section class="bg-apple aligncenter">
+          <pre>
+class Person {
+    private String name;
+    private int age;
+
+    Person (String name, int age) {
+        this.name = name;
+        this.age = age;
+    };
+
+    public int age() {
+        return age;
+    }
+
+    public String name(){
+        return name;
+    }
+
+    public toString() { ... }
+
+    public hashCode() { ... }
+}
+</pre>
+          <h2 class="text-emoji zoomIn">😎</h2>
+          <h3><strong>Thank you!</strong></h2>
+          <p><a href="https://twitter.com/webslides" title="@WebSlides on Twitter">@WebSlides</a></p>
+        </section>
+
+      </article>
+    </main>
+    <!--main-->
+
+    <!-- Required -->
+    <script src="../static/js/webslides.js"></script>
+    <script src="../static/js/Chart.min.js"></script>
+    <script src="../static/js/chart-one.js"></script>
+    <script src="../static/js/highlight.pack.js"></script>
+  
+    <script>
+       function loadScreens(){
+          loadScreen('main-slide');
+          loadScreen('jk');
+          loadScreen('marco');
+          loadScreen('dev-features');
+          loadScreen('jep-chart', buildJEPChart);
+          loadScreen('gc-features');
+          loadScreen('other-features');
+          loadScreen('records');
+          loadScreen('hidden-changes');
+           setTimeout(
+               function() {loadHighlighter()},500);
+
+       }
+      </script>
+       <script src="../static/js/marco.js"></script>
+    <script>
+         </script>
+
+
+
+
+    <script>
+      window.ws = new WebSlides();
+    </script>
+
+    <!-- OPTIONAL - svg-icons.js (fontastic.me - Font Awesome as svg icons) -->
+    <script defer src="../static/js/svg-icons.js"></script>
+
+  </body>
+</html>
